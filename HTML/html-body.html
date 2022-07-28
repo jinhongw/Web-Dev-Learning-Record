@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    th, td {
+      padding: 10px;
+      border: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+  <h2>4.1. Block elements vs inline elements</h1>
+  <p>block elements(p, div, heading elements, list and list items,...)</h3>
+  <p>inline elements(a, span, img,...)</h3>
+  <h1>5. Tags that interact with text</h1>
+  <h2>5.1. The p tag</h2>
+  <p>p is a block element</p>
+  <h2>5.2. The span tag</h2>
+  <p>p can add <span>span in it</span></p>
+  <p>p can't add <p>another p in it</p></p>
+  <h2>5.3. The br tag</h2>
+  <p>some text <br/> A new line</p>
+  <h2>5.4. The heading tags</h2>
+  <p>HTML provides us 6 heading tags, we have h1, h2, h3, h4, h5, h6</p>
+  <h1>h1</h1>
+  <h2>h2</h2>
+  <h3>h3</h3>
+  <h4>h4</h4>
+  <h5>h5</h5>
+  <h6>h6</h6>
+  <p>p</p>
+  <h2>5.5. The strong tag</h2>
+  <strong>this is a strong tag</strong>
+  <h2>5.6. the e tag</h2>
+  <em>this is a em tag</em>
+  <h3>5.6.1. Quotes</h3>
+  <q>this is a q tag</q>
+  <h2>5.7. Horizontal line</h2>
+  <hr>
+  <h2>5.8. Code blocks</h2>
+  <code>
+    this is a code tag
+    var code = code
+    if (code == code) {
+      let code = code
+    }
+  </code>
+  <pre>
+    this is a pre tag
+    var pre = pre
+    if (pre == pre) {
+      let pre = pre
+    }
+  </pre>
+  <pre>Chrom gives <code>pre</code> this default style 
+    pre {
+      display: block;
+      font-family: monospace;
+      white-space: pre;
+      margin: 1em 0px;
+    }
+  </pre>
+  <h2>5.9. Lists</h2>
+  <p>We have 3 types of lists</p>
+  <p>unordered lists</p>
+  <ul>
+    <li>First</li>
+    <li>Second</li>
+  </ul>
+  <p>ordered lists</p>
+  <ol>
+    <li>First</li>
+    <li>Second</li>
+  </ol>
+  <p>definition lists</p>
+  <dl>
+    <dt>Flavio</dt>
+    <dd>The name</dd>
+    <dt>Copes</dt>
+    <dd>The surname</dd>
+  </dl>
+  <h2>5.10. Other text tags</h2>
+  <ul>
+    <li>the <mark>mark</mark> tag</li>
+    <li>the <ins>ins</ins> tag</li>
+    <li>the <del>del</del> tag</li>
+    <li>the <sup>sup</sup> tag</li>
+    <li>the <sub>sub</sub> tag</li>
+    <li>the <small>small</small> tag</li>
+    <li>the <i>i</i> tag</li>
+    <li>the <b>b</b> tag</li>
+  </ul>
+  <h1>Links</h1>
+  <a href="https://flaviocopes.com">flaviocopes.com</a>
+  <a href="https://flaviocopes.com"><img src="avatar.png" alt="avatar.png" width="200" height="200"/></a>
+  <a href="https://flaviocopes.com" target="_blank">open flaviocopes.com in new tab</a>
+  <h1>7. Container tags and page structure HTML</h1>
+  <h2>7.1. Container tags</h2>
+  <p>We have</p>
+  <ul>
+    <li>article</li>
+    <li>section</li>
+    <li>div</li>
+  </ul>
+  <h3>7.1.1. article</h3>
+  <div>
+    <article>
+      <h2>A blog post</h2>
+      <a href="https://flaviocopes.com">Read more</a>
+    </article>
+    <article>
+      <h2>Another blog post</h2>
+      <a href="https://flaviocopes.com">Read more</a>
+    </article>
+  </div>
+  <h3>7.1.2. section</h3>
+  <section>
+    <h2>A section of the page</h2>
+    <p>...</p>
+    <img src="avatar.png" alt="avatar.png" width="200" height="200"/>
+  </section>
+  <section>
+    <h2>A section of the page</h2>
+    <p>...</p>
+    <img src="avatar.png" alt="avatar.png" width="200" height="200"/>
+  </section>
+  <h3>7.1.3. div</h3>
+  <div>...</div>
+  <h2>7.2. Tags related to page</h2>
+  <h3>7.2.1. nav</h3>
+  <nav>
+    <ol>
+      <li><a href="https://flaviocopes.com">flaviocopes.com</a></li>
+      <li><a href="https://flaviocopes.com">flaviocopes.com</a></li>
+    </ol>
+  </nav>
+  <h3>7.2.2. aside</h3>
+  <div>
+    <p>some text..</p>
+    <aside>
+      <p>A quote..</p>
+    </aside>
+    <p>onter text..</p>
+  </div>
+  <h3>7.2.3. header</h3>
+  <article>
+    <header>
+      <h1>Article title</h1>
+    </header>
+  </article>
+  <h3>7.2.4. main</h3>
+  <main>
+    <p>this is main</p>
+  </main>
+  <h3>7.2.5. footer</h3>
+  <article>
+    <footer>
+      <p>Footer</p>
+    </footer>
+  </article>
+  <h1>8. Forms</h1>
+  <form action="/" method="post">
+    <h2>8.1 The input tag</h2>
+    <input type="text"/>
+    <input type="text" name="username"/>
+    <input type="text" name="username" placeholder="your username"/>
+    <h3>8.1.1. Email</h3>
+    <input type="email" name="email" placeholder="your email"/>
+    <h3>8.1.2. Password</h3>
+    <input type="password" name="password",placeholder="your password"/>
+    <h3>8.1.3 Numbers</h3>
+    <input type="number" name="age" placeholder="your age"/>
+    <input type="number" name="age" placeholder="your age" min="18" max="110"/>
+    <input type="number" name="a-number" min="18" max="110" step="5"/>
+    <h3>8.1.4. Hidden field</h3>
+    <input type="hidden" name="some-hidden-field" value="some-value"/>
+    <h3>8.1.5. Setting a defult value</h3>
+    <input type="number" name="age" value="18">
+    <input type="number" name="age" placeholder="your age" value="18">
+    <h2>8.2 From submit</h2>
+    <input type="submit"/>
+    <input type="submit" value="click me"/>
+    <h2>8.3. Form validation</h2>
+    <h3>8.3.1. Set fields as requred</h3>
+    <input type="text" name="username" required/>
+    <h3>8.3.2. Enforce a specific fromat</h3>
+    <input type="text" name="username" pattern="[a-zA-Z]{8}"/>
+    <h2>8.4. Other fields</h2>
+    <h3>8.4.1 File uploads</h3>
+    <input type="file", name="secret-documents"/>
+    <input type="file", name="secret-documents" multiple/>
+    <input type="file", name="secret-documents" accept="image/*"/>
+    <input type="file", name="secret-documents" accept=".jpg, .jpge, .png"/>
+    <h3>8.4.2. Buttons</h3>
+    <input type="button" value="Click me"/>
+    <input type="reset"/>
+    <h3>8.4.3. Radio buttons</h3>
+    <input type="radio" name="color" value="yellow"/>
+    <input type="radio" name="color" value="red"/>
+    <input type="radio" name="color" value="blue"/>
+    <h3>8.4.4. Checkboxes</h3>
+    <input type="checkbox" name="color" value="yellow"/>
+    <input type="checkbox" name="color" value="red"/>
+    <input type="checkbox" name="color" value="blue"/>
+    <h3>8.4.5. Date and time</h3>
+    <input type="date" name="brthday"/>
+    <input type="time" name="time-to-pickup"/>
+    <input type="month" name="choose-release-month"/>
+    <input type="week" name="choose-week"/>
+    <input type="datetime-local" name="date-and-time"/>
+    <h3>8.4.6. Color picker</h3>
+    <input type="color" name="car-color"/>
+    <input type="color" name="car-color" value="#AAAAAA"/>
+    <h3>8.4.7. Range</h3>
+    <input type="range" name="age" min="0" max="100" value="30"/>
+    <input type="range" name="age" min="0" max="100" value="30" step="10"/>
+    <h3>8.4.8. Telephone</h3>
+    <input type="tel" name="telephone-number"/>
+    <input type="tel" pattern="[0-9]{3}-[0-9]{8}" name="telephone-number"/>
+    <h3>8.4.9. URL</h3>
+    <input type="url" name="website"/>
+    <input type="url" name="website" pattern="https://.*"/>
+  </form>
+  <h2>8.5. The textarea tag</h2>
+  <textarea name="article" id="" cols="30" rows="10"></textarea>
+  <h2>8.6. The select tag</h2>
+  <select name="color" id="color">
+    <option value="red">Red</option>
+    <option value="yellow">Yellow</option>
+  </select>
+  <select name="color" id="color">
+    <option value="red" disabled>Red</option>
+    <option value="yellow">Yellow</option>
+  </select>
+  <select name="color" id="color">
+    <option value="">None</option>
+    <option value="red">Red</option>
+    <option value="yellow">Yellow</option>
+  </select>
+  <select name="color" id="color">
+    <optgroup label="Primary">
+      <option value="red">Red</option>
+      <option value="yellow">Yellow</option>
+    </optgroup>
+    <optgroup label="Others">
+      <option value="green">Green</option>
+      <option value="pink">Pink</option>
+    </optgroup>
+  </select>
+  <h1>9. Table</h1>
+  <h3>9.0.1 The table tag</h3>
+  <table></table>
+  <h3>9.0.2 Rows</h3>
+  <table>
+    <tr>1</tr>
+    <tr>2</tr>
+    <tr>3</tr>
+  </table>
+  <h3>9.0.3. column headers</h3>
+  <table>
+    <tr>
+      <th>Column 1</th>
+      <th>Column 2</th>
+      <th>Column 3</th>
+    </tr>
+    <tr></tr>
+    <tr></tr>
+  </table>
+  <h3>9.0.4. The table content</h3>
+  <table>
+    <tr>
+      <th>Column 1</th>
+      <th>Column 2</th>
+      <th>Column 3</th>
+    </tr>
+    <tr>
+      <td>Row 1 Column 1</td>
+      <td>Row 1 Column 2</td>
+      <td>Row 1 Column 3</td>
+    </tr>
+    <tr>
+      <td>Row 2 Column 1</td>
+      <td>Row 2 Column 2</td>
+      <td>Row 2 Column 3</td>
+    </tr>
+  </table>
+  <h3>9.0.5. Span columns and rows</h3>
+  <table>
+    <tr>
+      <th>Column 1</th>
+      <th>Column 2</th>
+      <th>Column 3</th>
+    </tr>
+    <tr>
+      <td colspan="2">Row 1 Column 1-2</td>
+      <td>Row 1 Column 3</td>
+    </tr>
+    <tr>
+      <td colspan="3">Row 2 Column 1-3</td>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <th>Column 1</th>
+      <th>Column 2</th>
+      <th>Column 3</th>
+    </tr>
+    <tr>
+      <td colspan="2" rowspan="2">Row 1-2 Column 1-2</td>
+      <td>Row 1 Column 3</td>
+    </tr>
+    <tr>
+      <td>Row 2 Column 3</td>
+    </tr>
+  </table>
+  <h3>9.0.6. Row headings</h3>
+  <table>
+    <tr>
+      <th></th>
+      <th>Column 2</th>
+      <th>Column 3</th>
+    </tr>
+    <tr>
+      <th>Row 1</th>
+      <td>Col 2</td>
+      <td>Col 3</td>
+    </tr>
+    <tr>
+      <th>Row 2</th>
+      <td>Col 2</td>
+      <td>Col 3</td>
+    </tr>
+  </table>
+  <h3>9.0.7. More tags to organize the table</h3>
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Column 2</th>
+        <th>Column 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Row 1</th>
+        <td>Col 2</td>
+        <td>Col 3</td>
+      </tr>
+      <tr>
+        <th>Row 2</th>
+        <td>Col 2</td>
+        <td>Col 3</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td></td>
+        <td>Footer of col 1</td>
+        <td>Footer of col 2</td>
+      </tr>
+    </tfoot>
+  </table>
+  <h2>9.1. Table caption</h2>
+  <table>
+    <caption>
+      Dogs age
+    </caption>
+    <tr>
+      <th>Dog</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Roger</td>
+      <td>7</td>
+    </tr>
+  </table>
+  <h1>10. Multimedia tags: audio and video</h1>
+  <h2>10.1. The audio tag</h2>
+  <audio src="file.mp3"></audio>
+  <audio src="file.mp3" controls></audio>
+  <audio src="file.mp3" controls type="audio/mpeg"></audio>
+  <audio src="file.mp3" controls autoplay></audio>
+  <audio src="file.mp3" controls autoplay loop></audio>
+  <audio src="file.mp3" controls autoplay loop muted></audio>
+  <h2>10.2. The video tag</h2>
+  <video src="file.mp4"></video>
+  <video src="file.mp4" controls></video>
+  <video src="file.mp4" controls type="video/mp4"></video>
+  <video src="file.mp4" controls autoplay></video>
+  <video src="file.mp4" controls autoplay muted></video>
+  <video src="file.mp4" controls autoplay loop></video>
+  <video src="file.mp4" poster="avatar.png" width="200" height="200"></video>
+  <h1>11. iframes</h1>
+  <iframe src="html-body.html" width="300" height="200"></iframe>
+  <h2>11.1. Srcdoc</h2>
+  <iframe srcdoc="<p> My dog is a good dog</p>"></iframe>
+  <h2>11.2. Sandbox</h2>
+  <iframe src="html-body.html" width="300" height="200" sandbox=""></iframe>
+  <h2>11.3. Allow</h2>
+  <h2>11.4. Referrer</h2>
+  <h1>12. Images</h1>
+  <img src="avatar.png" alt="vatar.png" width="200" height="200"/>
+  <h2>12.1. The figure tag</h2>
+  <figure>
+    <img src="avatar.png" alt="avatar.png" width="200" height="200"/>
+    <figcaption>avatar</figcaption>
+  </figure>
+  <h2>12.2 Responsive images using srcset</h2>
+  <img src="avatar.png" alt="avatar.png" width="200" height="200" 
+  srcset="
+  avatar.png 500w,
+  avatar.png 800w,
+  avatar.png 1000w,
+  avatar.png 1400w,
+  "/>
+  <h1>13. Accessibility</h1>
+  
+</body>
+</html>
