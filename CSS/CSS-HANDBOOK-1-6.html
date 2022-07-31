@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p {
+      color: red;
+    }
+    .dog-name {
+      color: blue;
+    }
+    #dog-name {
+      color: blueviolet;
+    }
+    p.dog-name {
+      color: goldenrod;
+    }
+    p#dog-name-id {
+      color: aquamarine;
+    }
+    .dog-name.roger {
+      color: darkred;
+    }
+    .dog-name#roger {
+      color: aqua;
+    }
+    .group-1, 
+    .group-2 {
+      color: darksalmon;
+    }
+    p span {
+      color: lightskyblue;
+    }
+    p > span {
+      color: violet;
+    }
+    p + span {
+      color: greenyellow;
+    }
+  </style>
+</head>
+<body>
+  <h1>5. Seletors</h1>
+  <h2>5.1. Basic selectors</h2>
+  <p> Select a HTML tag p </p>
+  <p class="dog-name">Select class "dog-name</p>
+  <p id="dog-name">Select id "dog-name"</p>
+  <h2>5.2. combining selectors</h2>
+  <h3>5.2.1. Targrting an element wit a clas or id</h3>
+  <p class="dog-name">Select class "dog-name" with Tag p</p>
+  <p id="dog-name-id">Select id "dog-name-id" with Tag p</p>
+  <h3>5.2.2. Targeting multiple classes</h3>
+  <p class="dog-name roger">Select class dog-name.roger</p>
+  <h3>5.2.3. Combining classes and ids</h3>
+  <p class="dog-name" id="roger">Select class "dog-name" and id "roger"</p>
+  <h2>5.3. Grouping selectors</h2>
+  <p class="group-1">Select by group</p>
+  <p class="group-2">Select by group</p>
+  <h2>5.4. Follow the document tree with selectors</h2>
+  <span>this span not be selected</span>
+  <p>
+    this text not is p be selected
+    <span> this span in p is selected <span> this span in p is selected</span></span>
+  </p>
+  <p>
+    <span> this span in p is selected <span>
+      <strong>
+        <span> this span in p is selected <span> this span in p is selected</span></span>
+      </strong>
+  </p>
+  <p>this p sibling with span</p>
+  <span>this span sibling with p and be selected</span>
+</body>
+</html>
